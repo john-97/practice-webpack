@@ -4,14 +4,15 @@
   "description": "",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/john-97/practice-webpack.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "jonathan chow",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/john-97/practice-webpack/issues"
