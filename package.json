@@ -45,10 +45,10 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
-  // "husky": {
-  //   "hooks": {
-  //     "pre-commit": "cross-env npm run lint && npm test",
-  //     "pre-push": "cross-env npm run lint && npm test"
-  //   }
-  // }
+  "husky": {
+    "hooks": {
+      "pre-commit": "cross-env npm run lint && npm test",
+      "pre-push": "cross-env npm run lint && npm test"
+    }
+  }
 }
