@@ -8,6 +8,7 @@
   "rules": {
     "semi": "off",
     "arrow-body-style": "off",
-    "react/jsx-filename-extension": "off"
+    "react/jsx-filename-extension": "off",
+    "comma-dangle": "off"
   }
 }
