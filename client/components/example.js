@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import { addTodo, deleteTodo } from '../redux/reducers/example'
 
 const Example = (props) => {
+  const [toDoItem, setTodo] = useState('');
   /* eslint-disable react/destructuring-assignment */
   const { todo } = props.state.example
   const generateTodo = () => {
@@ -25,16 +26,26 @@ const Example = (props) => {
       )
     })
   }
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    props.addTodo(toDoItem)
+    setTodo('')
+  }
   return (
     <div>
-      <div
-        role="button"
-        tabIndex={0}
-        onClick={() => { props.addTodo('TO DO ITEM') }}
-        onKeyDown={() => {}}
+      <form
+        onSubmit={handleSubmit}
       >
-        TODO
-      </div>
+        <input
+          type="text"
+          onChange={(e) => { setTodo(e.target.value) }}
+          value={toDoItem}
+        />
+        <input
+          type="submit"
+          value="TODO"
+        />
+      </form>
       <div>
         {generateTodo()}
       </div>

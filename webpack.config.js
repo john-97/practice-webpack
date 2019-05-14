@@ -1,8 +1,11 @@
+// DEVELOPMENT WEBPACK CONFIGURATION
 const HtmlWebPackPlugin = require("html-webpack-plugin");
+const webpack = require('webpack');
 var { resolve } = require("path");
 
 module.exports = {
-  entry: "./src/index.js",
+  mode: "development",
+  entry: "./client/index.js",
   output: {
     path: resolve(__dirname, "dist"),
     filename: "bundle.js",
@@ -10,7 +13,7 @@ module.exports = {
   },
   devServer: {
     headers: {
-      'Access-Control-Allow-Origin': 'http://localhost:8086',
+      'Access-Control-Allow-Origin': 'http://localhost:8080',
       'Access-Control-Allow-Headers': '*',
       'Access-Control-Request-Headers': 'content-type, accept'
     },
@@ -75,10 +78,23 @@ module.exports = {
       }
     ]
   },
+  resolve: {
+    modules: [
+      "node_modules",
+      resolve(__dirname, "app")
+    ],
+    extensions: [".js", ".json", ".jsx", ".css"],
+    alias: {
+      "module": "new-module",
+      "only-module$": "new-module",
+      "module": resolve(__dirname, "app/third/module.js"),
+    },
+  },
   plugins: [
     new HtmlWebPackPlugin({
-      template: './src/index.html',
+      template: './client/index.html',
       filename: './index.html',
-    })
+    }),
+    new webpack.HotModuleReplacementPlugin(),
   ]
 };
