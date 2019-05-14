@@ -1,9 +1,13 @@
 {
   "parser": "babel-eslint",
   "extends": "airbnb",
+  "env": {
+    "browser": true,
+    "node": true
+  },
   "rules": {
-    "no-unused-vars": 0,
-    "max-len": [1, 120, 2, {"ignoreComments": true}],
-    "prop-types": [2]
+    "semi": "off",
+    "arrow-body-style": "off",
+    "react/jsx-filename-extension": "off"
   }
 }
