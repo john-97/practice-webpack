@@ -6,6 +6,7 @@
 ### Webpack Includes
 * HTML, SCSS, React, Babel
 * Eslint
+* Redux
 
 ### Commands
 * npm run start (localhost:8080)
@@ -15,3 +16,4 @@
 * **React** (./src/index.js)
 * **HTML** (./src/index.html)
 * **SCSS** (./src/assets/scss/main.scss)
+* **Redux** (./src/redux/configureStore.js)
