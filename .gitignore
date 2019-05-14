@@ -1,2 +1,6 @@
 node_modules
 bundle.js
+
+dist/*
+dist/index.html
+dist/bundle.js
