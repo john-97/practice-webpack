@@ -4,5 +4,5 @@
 * eslint ```sudo npm i -g eslint```
 
 ### Commands
-* npm run start
-* npm run build
+* npm run start (localhost:8080)
+* npm run build (builds in dist folder)

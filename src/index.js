@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import './assets/scss/main.scss'
 
 /* eslint-disable no-unused-expressions */
 /* eslint-disable no-undef */
