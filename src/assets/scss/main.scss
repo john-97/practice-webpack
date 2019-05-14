@@ -1,5 +1,9 @@
+@import './variables';
 body {
   font-size: 16px;
+  background: url($image-path + 'sample.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 [role="button"],
