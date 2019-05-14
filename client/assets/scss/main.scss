@@ -1,0 +1,19 @@
+@import './variables';
+body {
+  font-size: 16px;
+  font-family: $font-quicksand;
+  text-align: center;
+  color: white;
+  background: url($image-path + 'sample.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+[role="button"],
+button,
+input,
+label,
+select {
+  cursor: pointer;
+  outline: none;
+}
