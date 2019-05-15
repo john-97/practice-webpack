@@ -4,8 +4,8 @@
 * eslint ```sudo npm i -g eslint```
 
 ### Webpack Includes
-* HTML, SCSS, React, Babel, Images
-* Eslint
+* HTML, SCSS, React, Babel, Images (Basic React)
+* Eslint, Jest => husky hooks (linting for git commit and push + to dev server)
 * Redux
 * [simple-line-icons](https://simplelineicons.github.io)
 
