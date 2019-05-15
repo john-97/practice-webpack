@@ -7,7 +7,7 @@
 * HTML, SCSS, React, Babel, Images
 * Eslint
 * Redux
-* [https://simplelineicons.github.io](simple-line-icons)
+* [simple-line-icons](https://simplelineicons.github.io)
 
 ### Commands
 * npm run start (localhost:8080)
