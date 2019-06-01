@@ -5,8 +5,8 @@
   "main": "main.bundle.js",
   "scripts": {
     "test": "jest",
-    "start": "webpack-dev-server --open --mode development --config ./webpack.development.js",
-    "serve": "serve -l 8080 ./dist/",
+    "dev": "webpack-dev-server --open --mode development --config ./webpack.development.js",
+    "serve": "serve -l 3000 ./dist/",
     "build": "webpack --config ./webpack.production.js",
     "lint": "eslint --ext .jsx,.js ./client"
   },
