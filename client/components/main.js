@@ -1,7 +1,7 @@
 import React from 'react'
-import { Route, Switch } from 'react-router' // react-router v4/v5
-import ReduxExample from './example'
-import Todo from './example-page-two'
+import { Route, Switch } from 'react-router-dom' // react-router v4/v5
+import ReduxExample from './example/example'
+import Todo from './example/example-page-two'
 
 const Main = () => {
   return (

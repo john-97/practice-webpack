@@ -1,0 +1,10 @@
+.example-main{
+  min-height: 100vh;
+  position: relative;
+  .example-main-body{
+    padding: $header-height 0 $footer-height 0;
+    form{
+      margin-top: 20px;
+    }
+  }
+}

@@ -2,17 +2,26 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
-import { historyPush } from '../redux/reducers/example'
+
+import Header from '../common/header'
+import Footer from '../common/footer'
+import { historyPush } from '../../redux/reducers/example'
 
 const Todo = (props) => {
   return (
-    <div
-      onClick={() => { props.historyPush('/') }}
-      role="button"
-      tabIndex={0}
-      onKeyDown={() => {}}
-    >
-      TODO PAGE NOTHING HERE
+    <div className="example-main">
+      <Header />
+      <Footer />
+      <div className="example-main-body">
+        <div
+          onClick={() => { props.historyPush('/') }}
+          role="button"
+          tabIndex={0}
+          onKeyDown={() => {}}
+        >
+          TODO PAGE NOTHING HERE
+        </div>
+      </div>
     </div>
   )
 }

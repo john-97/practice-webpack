@@ -2,7 +2,10 @@ import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
-import { addTodo, deleteTodo } from '../redux/reducers/example'
+
+import Header from '../common/header'
+import Footer from '../common/footer'
+import { addTodo, deleteTodo } from '../../redux/reducers/example'
 
 const Example = (props) => {
   const [toDoItem, setTodo] = useState('');
@@ -32,22 +35,26 @@ const Example = (props) => {
     setTodo('')
   }
   return (
-    <div>
-      <form
-        onSubmit={handleSubmit}
-      >
-        <input
-          type="text"
-          onChange={(e) => { setTodo(e.target.value) }}
-          value={toDoItem}
-        />
-        <input
-          type="submit"
-          value="TODO"
-        />
-      </form>
-      <div>
-        {generateTodo()}
+    <div className="example-main">
+      <Header />
+      <Footer />
+      <div className="example-main-body">
+        <form
+          onSubmit={handleSubmit}
+        >
+          <input
+            type="text"
+            onChange={(e) => { setTodo(e.target.value) }}
+            value={toDoItem}
+          />
+          <input
+            type="submit"
+            value="TODO"
+          />
+        </form>
+        <div>
+          {generateTodo()}
+        </div>
       </div>
     </div>
   )
