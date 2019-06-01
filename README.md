@@ -13,4 +13,4 @@
 ### Commands
 * ```npm run start``` (localhost:8080)
 * ```npm run build``` (builds in dist folder)
-* ```npm run serve``` (serves build folder at localhost: 8080)
+* ```npm run serve``` (serves dist folder at localhost: 8080)
