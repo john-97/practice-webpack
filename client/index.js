@@ -11,7 +11,7 @@ import Main from './components/main'
 
 const store = configureStore({})
 const target = document.getElementById('root')
-target ? ReactDOM.render(
+target ? ReactDOM.hydrate(
   <Provider store={store}>
     <ConnectedRouter history={history}>
       <Main />

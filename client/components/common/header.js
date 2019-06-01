@@ -55,6 +55,7 @@ const Header = () => {
           tabIndex={0}
         />
       </div>
+      {/* mobile links xs/sm/md breakpoints */}
       {generateMobileMenu()}
     </div>
   )
