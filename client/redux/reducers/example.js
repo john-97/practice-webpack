@@ -42,3 +42,9 @@ export function deleteTodo(index) {
     dispatch(push('/todo'))
   }
 }
+
+export function historyPush(url) {
+  return (dispatch) => {
+    dispatch(push(url))
+  }
+}

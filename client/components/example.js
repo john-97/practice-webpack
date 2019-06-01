@@ -13,7 +13,7 @@ const Example = (props) => {
       return (
         /* eslint-disable react/no-array-index-key */
         <div key={num}>
-          <div>{todoItem.name}</div>
+          <div className="icon-target">{todoItem.name}</div>
           <div
             role="button"
             tabIndex={0}

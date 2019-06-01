@@ -2,6 +2,7 @@
 body {
   font-size: 16px;
   font-family: $font-quicksand;
+
   text-align: center;
   color: white;
   background: url($image-path + 'sample.jpg');
@@ -9,6 +10,7 @@ body {
   background-repeat: no-repeat;
 }
 
+/* CLICKABLES */
 [role="button"],
 button,
 input,
