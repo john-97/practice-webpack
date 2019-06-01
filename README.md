@@ -2,6 +2,7 @@
 
 ### Pre-Installs Required
 * eslint ```sudo npm i -g eslint```
+* serve ```npm i -g serve```
 
 ### Webpack Includes
 * HTML, SCSS, React, Babel, Images (Basic React)
@@ -12,6 +13,7 @@
 ### Commands
 * npm run start (localhost:8080)
 * npm run build (builds in dist folder)
+* npm run serve (serves build folder at localhost: 8080)
 
 ### Entry Files
 * **React** (./client/index.js)

@@ -6,6 +6,7 @@
   "scripts": {
     "test": "jest",
     "start": "webpack-dev-server --open --mode development --config ./webpack.development.js",
+    "serve": "serve -l 8080 ./dist/",
     "build": "webpack --config ./webpack.production.js",
     "lint": "eslint --ext .jsx,.js ./client"
   },
